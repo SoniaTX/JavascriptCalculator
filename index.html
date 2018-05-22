@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Calculator w/ History feature</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+ <div class=calculator >
+  <div class="display">
+      
+  <p><font color="white"><b></b></font><input style="font-weight:bold" type="text" id="disp" name="disp">
+<input type="text" id="cache2" name="cache2" style="display:none">
+  <br>
+    
+  <p><font color="white"><b></b></font><input style="font-weight:bold" type="text" id="total" name="total">
+<input type="text" id="cache3" name="cache3"  style="display:none">
+  </div> 
+   <br>
+ <input type="button" value="&#40;"  id='symbols'  onclick="change(this.value)">   
+ <input type="button" value="&#41;" id='symbols' 
+ onclick="change(this.value)">    
+ <input type='button' value="%" id='symbols'  onclick="percent()">
+ <input type='button' value="x&#178;" id='symbols'  onclick="power()">
+      <br>
+ <input type="button" value="C" id='keys'  onclick="refresh_me()">
+ <input type='button' value='&larr;' id='keys'  onclick='backspace()'>
+ <input type="button" value="History" id='hist'   onclick="memory()">
+ 
+      <br>
+ <input type="button" value="7" id='nbrs'  onclick="affixScreen(7)">
+ <input type="button" value="8" id='nbrs'  onclick="affixScreen(8)"> 
+ <input type="button" value="9" id='nbrs' onclick="affixScreen(9)">  
+ <input type="button" value="*" id='keys' onclick="change(this.value)">
+      <br>
+<input type="button" value="4" id='nbrs' onclick="affixScreen(4)"> 
+<input type="button" value="5"  id='nbrs' onclick="affixScreen(5)">
+<input type="button" value="6" id='nbrs'  onclick="affixScreen(6)">
+<input type="button" value="-"  id='keys' onclick="change(this.value)">
+      <br>
+<input type="button" value="1" id='nbrs' onclick="affixScreen(1)">   
+<input type="button" value="2" id='nbrs' onclick="affixScreen(2)">  
+<input type="button" value="3" id='nbrs' onclick="affixScreen(3)">
+ <input type="button" value="+" id='keys' onclick="change(this.value)">
+     <br>
+<input type='button' value="&#177;" id='symbols' onclick="negative()">   
+<input type="button" value="0" id='nbrs' onclick="affixScreen(0)"> 
+<input type="button" value="." id='symbols' onclick="change(this.value)">
+<input type="button" value="/" id='keys'  onclick="change(this.value)">
+   
+  <input type="button" value="=" id='equl' onclick="equals()"> 
+
+
+    </form>
+    
+  </div>
+
+ 
+<form>
+ 
+  <div id='printMe'>
+
+  <div class="sidebar" id="mem" >
+   
+    <u>Calculation History </u><br> 
+            </div>
+<div>
+  
+  <br><textarea style="display:none" rows="4" cols="50" id="mem"></textarea>
+ 
+   
+</div>
+<span style="display: inline;">
+<button id= "printOut" onclick="printDiv('printMe')">Print History </button>
+  
+ <button id= "clearOut" onclick="clearMe()">Clear History </button>
+ </span>
+  
+</form>
+
+</div>
+
+</body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
